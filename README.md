@@ -17,3 +17,7 @@
 # Run
 
 `npm start`
+
+# Run in dev enviorment
+
+`npm run dev`
