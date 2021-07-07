@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Message Analyzer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="output">
+      <%for(let i = 0; i < result.length; i++){%>
+      <p><%= text[i] %></p>
+      <h3 class="mood <%= result[i].sentiment === 'positive' ? 'positive' : result[i].sentiment === 'negative' ? 'negative' : result[i].sentiment === 'neutral' ? 'neutral' : 'mixed' %>" >sentiment: <%= result[i].sentiment %><%= result[i].sentiment === 'mixed' ? '' : ` (${result[i].confidenceScores[result[i].sentiment]*100}%)` %></h3>
+      <% }%>
+  
+      <form action="/" method="post">
+        <textarea name="sendText" id="sendText" cols="60" rows="10" required></textarea>
+        <input type="submit" value="Analyze" />
+      </form>
+    </div>
+    
+  </body>
+</html>

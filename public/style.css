@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("background.png");
+}
+
+.logoImg {
+  background-image:url("logo/default.png");
+  opacity: 0.8;
+
+  height: 150px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+.output {
+    margin:40px auto;
+    max-width: 680px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.output h3 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.output p {
+    font-size: 1.75rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+form {
+    margin:0 auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea { 
+    font-size: 30px;
+    padding: 15px;
+    opacity: 0.7;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+input {
+    margin-top: 1rem;
+    padding: 5px;
+    width: 200px;
+    font-size: 40px;
+    color: rgb(226, 207, 207);
+    background: linear-gradient(90deg, rgba(41,170,26,1) 0%, rgba(18,223,217,0.958420868347339) 100%);
+    border: none;
+    border-radius: 5px;
+    opacity: 0.95;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.mood {
+    text-transform: capitalize;
+    padding: 1rem;
+    margin-bottom: 28px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.positive {
+    background: linear-gradient(90deg, rgba(34,121,171,1) 0%, rgba(0,255,55,1) 100%);
+}
+
+.neutral {
+    color: rgb(236, 226, 226);
+    background: linear-gradient(90deg, rgba(43,85,109,1) 0%, rgba(71,71,71,0.958420868347339) 100%);
+}
+
+.negative {
+    background: linear-gradient(90deg, rgba(63, 120, 152,1) 0%, rgba(255,46,0,1) 100%);
+}
+
+.mixed {
+    color: rgb(236, 226, 226);
+    background: linear-gradient(90deg, rgba(26,170,33,1) 0%, rgba(223,66,18,0.958420868347339) 100%);
+}
+
+input {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    textarea {
+        width: 650px;
+        height: 350px;
+      }
+}
+
+@media screen and (max-width: 700px){
+    textarea {
+        width: 450px;
+        height: 250px;
+    }
+
+    input {
+        width: 150px;
+        font-size: 30px;
+    }
+}
